@@ -10,7 +10,7 @@ export default function App() {
     <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Image source={{ uri: LOGO_URL }} style={styles.logo} />
-        <Text style={styles.title}>M100: Escudo Inmune</Text>
+        <Text style={styles.title}>M100: ORÍGENES</Text>
         <Text style={styles.subtitle}>El Amanecer de la Vida Invisible</Text>
       </View>
 

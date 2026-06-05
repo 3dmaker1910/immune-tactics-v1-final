@@ -9,38 +9,36 @@ export default function App() {
     <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Image source={{ uri: LOGO_URL }} style={styles.logo} />
-        <Text style={styles.title}>M102: ESCUDO INMUNE</Text>
-        <Text style={styles.subtitle}>Tu Ejército Invisible en Acción</Text>
+        <Text style={styles.title}>M100: ORÍGENES</Text>
+        <Text style={styles.subtitle}>El Amanecer de la Vida Invisible</Text>
       </View>
-
       <View style={styles.content}>
         <View style={styles.card}>
-          <Text style={styles.cardTitle}>Zona de Guerra</Text>
-          <Text style={styles.cardText}>Cada segundo, trillones de células pelean por tu vida. ¡Conoce a tus defensores!</Text>
+          <Text style={styles.cardTitle}>Dra. Micra dice:</Text>
+          <Text style={styles.cardText}>"¡Bienvenido! Aquí verás cómo las bacterias crearon el oxígeno que respiras hoy."</Text>
         </View>
-        {/* Aquí puedes añadir más información científica después */}
       </View>
-
       <View style={styles.footer}>
         <Text style={styles.founderText}>"Nunca, nunca, pero nunca te des por vencido."</Text>
+        <Text style={styles.founderName}>- Nando, Fundador</Text>
       </View>
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#000' },
-  header: { padding: 50, alignItems: 'center', backgroundColor: '#1a1a2e' },
-  logo: { width: 100, height: 100, borderRadius: 50, marginBottom: 20 },
-  title: { color: '#ff0055', fontSize: 28, fontWeight: 'bold' },
-  subtitle: { color: '#00d2ff', fontSize: 16 },
+  container: { flex: 1, backgroundColor: '#000814' },
+  header: { padding: 50, alignItems: 'center', backgroundColor: '#001d3d' },
+  logo: { width: 120, height: 120, borderRadius: 60, marginBottom: 20 },
+  title: { color: '#00d2ff', fontSize: 28, fontWeight: 'bold' },
+  subtitle: { color: '#91eae4', fontSize: 16 },
   content: { padding: 30 },
-  card: { backgroundColor: '#111', padding: 25, borderRadius: 15, borderLeftWidth: 5, borderLeftColor: '#ff0055' },
-  cardTitle: { color: '#ff0055', fontWeight: 'bold', fontSize: 20, marginBottom: 10 },
-  cardText: { color: '#fff', fontSize: 16 },
+  card: { backgroundColor: '#1a1a2e', padding: 20, borderRadius: 15, borderLeftWidth: 5, borderLeftColor: '#00FFFF' },
+  cardTitle: { color: '#00FFFF', fontWeight: 'bold' },
+  cardText: { color: '#fff', fontStyle: 'italic' },
   footer: { padding: 40, alignItems: 'center' },
-  founderText: { color: '#CCFF00', fontSize: 14, fontStyle: 'italic' }
+  founderText: { color: '#CCFF00', fontSize: 16, fontStyle: 'italic' },
+  founderName: { color: '#aaa', fontSize: 12 }
 });
-
 
 registerRootComponent(App);
