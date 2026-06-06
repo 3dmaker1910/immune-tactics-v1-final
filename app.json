@@ -1,49 +1,11 @@
-import { registerRootComponent } from 'expo';
-import React, { useState } from 'react';
-import { StyleSheet, Text, View, ScrollView, Image, TouchableOpacity } from 'react-native';
-
-// LOGO OFICIAL DE MICROPIA
-const LOGO_URL = 'https://static.prod-images.emergentagent.com/jobs/b09505ba-190e-4ca7-9d47-23f73249f18b/images/ead6be8a705c5bff1249e23b0e7accce78ef17c453ae9a93a98fbca30f7ed3ae.png';
-
-export default function App() {
-  return (
-    <ScrollView style={styles.container}>
-      <View style={styles.header}>
-        <Image source={{ uri: LOGO_URL }} style={styles.logo} />
-        <Text style={styles.title}>M100: ORÍGENES</Text>
-        <Text style={styles.subtitle}>El Amanecer de la Vida Invisible</Text>
-      </View>
-
-      <View style={styles.content}>
-        <Text style={styles.text}>Hace 3,500 millones de años, la vida comenzó con una sola célula...</Text>
-        <View style={styles.card}>
-          <Text style={styles.cardTitle}>Dra. Micra dice:</Text>
-          <Text style={styles.cardText}>"¡Bienvenido, explorador! Aquí verás cómo las bacterias crearon el oxígeno que respiras hoy."</Text>
-        </View>
-      </View>
-
-      <View style={styles.footer}>
-        <Text style={styles.founderText}>"Nunca, nunca, pero nunca te des por vencido."</Text>
-        <Text style={styles.founderName}>- Nando, Fundador</Text>
-      </View>
-    </ScrollView>
-  );
+{
+  "expo": {
+    "name": "Micropia Origenes",
+    "slug": "microbial-origins",
+    "version": "1.0.0",
+    "platforms": ["web"],
+    "web": {
+      "bundler": "metro"
+    }
+  }
 }
-
-const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#000814' },
-  header: { padding: 50, alignItems: 'center', backgroundColor: '#001d3d' },
-  logo: { width: 120, height: 120, borderRadius: 60, marginBottom: 20 },
-  title: { color: '#00d2ff', fontSize: 28, fontWeight: 'bold' },
-  subtitle: { color: '#91eae4', fontSize: 16 },
-  content: { padding: 30 },
-  text: { color: '#fff', fontSize: 18, lineHeight: 26, textAlign: 'center', marginBottom: 30 },
-  card: { backgroundColor: '#1a1a2e', padding: 20, borderRadius: 15, borderLeftWidth: 5, borderLeftColor: '#00FFFF' },
-  cardTitle: { color: '#00FFFF', fontWeight: 'bold', marginBottom: 10 },
-  cardText: { color: '#fff', fontStyle: 'italic' },
-  footer: { padding: 40, alignItems: 'center' },
-  founderText: { color: '#CCFF00', fontSize: 16, fontStyle: 'italic', textAlign: 'center' },
-  founderName: { color: '#aaa', fontSize: 14, marginTop: 5 }
-});
-
-registerRootComponent(App)
